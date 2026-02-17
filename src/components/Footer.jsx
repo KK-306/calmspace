@@ -77,6 +77,17 @@ export default function Footer() {
                 About the Founders
               </Link>
             </li>
+
+            {/* ✅ Blog Page Link (NEW) */}
+            <li>
+              <Link
+                to="/blog"
+                className="hover:text-calmTeal transition duration-300"
+              >
+                Blog & Articles
+              </Link>
+            </li>
+
           </ul>
         </div>
 

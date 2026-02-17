@@ -23,7 +23,7 @@ export default function Navbar() {
             className="w-12 h-12 object-contain drop-shadow-sm"
           />
 
-          {/* Brand Name (Hidden on Small Screens) */}
+          {/* Brand Name */}
           <span className="text-2xl font-extrabold text-calmTeal hidden sm:block">
             CalmSpace
           </span>
@@ -42,7 +42,7 @@ export default function Navbar() {
             Home
           </Link>
 
-          {/* Founder Page */}
+          {/* Founder */}
           <Link
             to="/founder"
             className="hover:text-calmTeal transition duration-300"
@@ -50,7 +50,15 @@ export default function Navbar() {
             Founder
           </Link>
 
-          {/* Plans Section */}
+          {/* ✅ Blog Page Link (NEW) */}
+          <Link
+            to="/blog"
+            className="hover:text-calmTeal transition duration-300"
+          >
+            Blog
+          </Link>
+
+          {/* Plans */}
           <HashLink
             smooth
             to="/#plans"
@@ -59,7 +67,7 @@ export default function Navbar() {
             Plans
           </HashLink>
 
-          {/* Counselors Section */}
+          {/* Counselors */}
           <HashLink
             smooth
             to="/#counselors"
@@ -68,7 +76,7 @@ export default function Navbar() {
             Counselors
           </HashLink>
 
-          {/* ✅ Contact CTA Button */}
+          {/* Contact Button */}
           <HashLink
             smooth
             to="/#footer"
