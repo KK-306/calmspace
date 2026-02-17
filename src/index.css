@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Smooth Rendering + Default Body Styling */
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #ffffff;
+  color: #111827; /* Slightly darker for better contrast */
+  line-height: 1.6;
+}
+
+/* ✅ Headings Styling */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px; /* Modern premium look */
+}
+
+/* ✅ Paragraph Boost */
+p {
+  font-size: 1.05rem;
+  color: #4b5563;
+}
