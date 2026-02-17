@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // ✅ Import CalmSpace Logo
 import logo from "../assets/logos/calmspace.png";
@@ -36,7 +37,7 @@ export default function Footer() {
         </div>
 
         {/* ================================================= */}
-        {/* ✅ Quick Links */}
+        {/* ✅ Quick Links (Improved with HashLink Smooth Scroll) */}
         {/* ================================================= */}
         <div>
           <h3 className="text-xl font-heading font-bold text-white mb-5">
@@ -44,24 +45,30 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-4 text-gray-400">
+
+            {/* ✅ Scroll to Plans */}
             <li>
-              <a
-                href="#plans"
+              <HashLink
+                smooth
+                to="/#plans"
                 className="hover:text-calmTeal transition duration-300"
               >
                 Plans & Pricing
-              </a>
+              </HashLink>
             </li>
 
+            {/* ✅ Scroll to Counselors */}
             <li>
-              <a
-                href="#counselors"
+              <HashLink
+                smooth
+                to="/#counselors"
                 className="hover:text-calmTeal transition duration-300"
               >
                 Counselors
-              </a>
+              </HashLink>
             </li>
 
+            {/* ✅ Founder Page */}
             <li>
               <Link
                 to="/founder"
@@ -115,10 +122,10 @@ export default function Footer() {
           <p className="mt-6 text-gray-400 text-sm">
             Email:{" "}
             <a
-              href="mailto:calmspacenotification@gmail.com?subject=Support Request from CalmSpace Website"
+              href="mailto:calmspaceconnect@gmail.com?subject=Support Request from CalmSpace Website"
               className="text-calmTeal font-semibold hover:underline"
             >
-              calmspacenotification@gmail.com
+              calmspaceconnect@gmail.com
             </a>
           </p>
         </div>
