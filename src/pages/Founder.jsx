@@ -35,7 +35,7 @@ export default function Founder() {
 
     {
       name: "Kartik Karnwal",
-      role: "Developer",
+      role: "Developer(Website)",
       image: kartikImg,
       bio: "Committed to building a technology-driven solution that ensures mental wellness support is available anytime and from anywhere.",
       socials: {

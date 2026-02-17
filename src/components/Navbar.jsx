@@ -67,15 +67,7 @@ export default function Navbar() {
             Plans
           </HashLink>
 
-          {/* Counselors */}
-          <HashLink
-            smooth
-            to="/#counselors"
-            className="hover:text-calmTeal transition duration-300"
-          >
-            Counselors
-          </HashLink>
-
+          
           {/* Contact Button */}
           <HashLink
             smooth

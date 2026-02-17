@@ -117,7 +117,7 @@ export default function Hero() {
             </div>
 
             {/* Extra Users */}
-            <p className="ml-4 text-gray-700 font-semibold">+500 more</p>
+            <p className="ml-4 text-gray-700 font-semibold">+1500 more</p>
           </motion.div>
 
           {/* ✅ Hero Animation */}

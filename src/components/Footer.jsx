@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+// ✅ Official Social Icons
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+  FaWhatsapp,
+} from "react-icons/fa6";
+
 // ✅ Import CalmSpace Logo
 import logo from "../assets/logos/calmspace.png";
 
 export default function Footer() {
   return (
-    <footer
-      id="footer"
-      className="bg-gray-900 text-gray-300 pt-20 pb-10"
-    >
+    <footer id="footer" className="bg-gray-900 text-gray-300 pt-20 pb-10">
       <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-3 gap-12">
 
         {/* ================================================= */}
@@ -37,7 +42,7 @@ export default function Footer() {
         </div>
 
         {/* ================================================= */}
-        {/* ✅ Quick Links (Improved with HashLink Smooth Scroll) */}
+        {/* ✅ Quick Links */}
         {/* ================================================= */}
         <div>
           <h3 className="text-xl font-heading font-bold text-white mb-5">
@@ -45,8 +50,6 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-4 text-gray-400">
-
-            {/* ✅ Scroll to Plans */}
             <li>
               <HashLink
                 smooth
@@ -57,7 +60,6 @@ export default function Footer() {
               </HashLink>
             </li>
 
-            {/* ✅ Scroll to Counselors */}
             <li>
               <HashLink
                 smooth
@@ -68,7 +70,6 @@ export default function Footer() {
               </HashLink>
             </li>
 
-            {/* ✅ Founder Page */}
             <li>
               <Link
                 to="/founder"
@@ -78,7 +79,6 @@ export default function Footer() {
               </Link>
             </li>
 
-            {/* ✅ Blog Page Link (NEW) */}
             <li>
               <Link
                 to="/blog"
@@ -87,7 +87,6 @@ export default function Footer() {
                 Blog & Articles
               </Link>
             </li>
-
           </ul>
         </div>
 
@@ -99,33 +98,47 @@ export default function Footer() {
             Connect With Us
           </h3>
 
-          {/* Social Icons */}
-          <div className="flex gap-6 text-2xl">
+          {/* ✅ Professional Social Icons */}
+          <div className="flex gap-5 mt-3">
+
+            {/* Instagram */}
             <a
               href="https://www.instagram.com/thecalmspace.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-pink-400 transition duration-300"
+              className="p-3 rounded-full bg-gray-800 hover:bg-pink-500 hover:scale-110 transition duration-300"
             >
-              📷
+              <FaInstagram size={20} />
             </a>
 
+            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/company/thecalmspace/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition duration-300"
+              className="p-3 rounded-full bg-gray-800 hover:bg-blue-600 hover:scale-110 transition duration-300"
             >
-              💼
+              <FaLinkedinIn size={20} />
             </a>
 
+            {/* X (Twitter) */}
             <a
               href="https://x.com/Calm2024Space"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition duration-300"
+              className="p-3 rounded-full bg-gray-800 hover:bg-white hover:text-black hover:scale-110 transition duration-300"
             >
-              ❌
+              <FaXTwitter size={20} />
+            </a>
+
+            {/* ✅ WhatsApp Official */}
+            <a
+              href="https://wa.me/916026524880"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-gray-800 hover:bg-green-500 hover:scale-110 transition duration-300"
+            >
+              <FaWhatsapp size={20} />
             </a>
           </div>
 
@@ -133,12 +146,14 @@ export default function Footer() {
           <p className="mt-6 text-gray-400 text-sm">
             Email:{" "}
             <a
-              href="mailto:calmspaceconnect@gmail.com?subject=Support Request from CalmSpace Website"
+              href="mailto:calmspaceconnect@gmail.com"
               className="text-calmTeal font-semibold hover:underline"
             >
               calmspaceconnect@gmail.com
             </a>
           </p>
+
+        
         </div>
       </div>
 
@@ -146,7 +161,8 @@ export default function Footer() {
       {/* ✅ Bottom Footer */}
       {/* ================================================= */}
       <div className="text-center text-gray-500 text-sm mt-16 border-t border-gray-700 pt-8">
-        © {new Date().getFullYear()} CalmSpace | Built for Mental Wellness 🌙
+        ©2024 CalmSpace | Built for Mental Wellness | All
+        Rights Reserved
       </div>
     </footer>
   );

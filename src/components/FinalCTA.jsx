@@ -5,7 +5,7 @@ export default function FinalCTA() {
 
         {/* Heading */}
         <h2 className="text-4xl md:text-6xl font-heading font-extrabold text-gray-900">
-          Ready to Start Your Healing Journey? 🌙
+          Ready to Start Your Healing Journey? 
         </h2>
 
         {/* Subtext */}
